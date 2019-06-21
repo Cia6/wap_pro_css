@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generator faktur</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+
+<header>
+    <p><h2>Generator faktur</h2></p>
+</header>
+<form method="post" action="invoice">
+<section class="flex">
+    <div class="block">
+        <h3 class="border">dane faktury</h3>
+        <p>Faktura VAT: <input type="text" id="faktura-input" name="faktura"/> <br> <br>
+        </p>
+        <p>Nr Faktury: <input type="text" id="numerfaktury" name="numer-faktury"/> <br> <br></p>
+    </div>
+    <div class="block">
+        <h3 class="border">data i miejsce</h3>
+        <p>Data wystawienia faktury: <input type="text" id="data-w-faktury" name="data-w-faktury"/> <br> <br></p>
+        <p>Miejsce wystawienia faktury: <input type="text" id="miejsce-faktury" name="miejsce-faktury"/> <br> <br></p>
+        <p>Data: <input type="date" id="data-input" name="data"/> <br> <br></p>
+    </div>
+</section>
+
+<section class="flex">
+    <div class="block">
+        <h3 class="border">Dane sprzedawcy</h3>
+        <p>Nazwa firmy: <input type="text" id="say-s-hello-text-input" name="name-s"/> <br> <br></p>
+        <p>Adres firmy: <input type="text" id="adres-s-input" name="adres-s"/> <br> <br></p>
+        <p>Adres firmy cd.: <input type="text" id="adres-s2-input" name="adres-s2"/> <br> <br></p>
+        <p>NIP: <input type="text" id="NIP-input" name="NIP-s"/> <br> <br></p>
+        <p>REGON: <input type="text" id="NIP-input" name="REGON-s"/> <br> <br></p>
+        <p>Dodatkowe informacje: <input type="text" id="dodatek-input" name="dodatek-s"/> <br> <br></p>
+    </div>
+    <div class="block">
+        <h3 class="border">Dane nabywcy</h3>
+        <p>Nazwa firmy: <input type="text" id="say-s-hello-text-input" name="name-n"/> <br> <br></p>
+        <p>Adres firmy: <input type="text" id="adres-s-input" name="adres-n"/> <br> <br></p>
+        <p>Adres firmy cd.: <input type="text" id="adres-s2-input" name="adres-n2"/> <br> <br></p>
+        <p>NIP: <input type="text" id="NIP-input" name="NIP-n"/> <br> <br></p>
+        <p>REGON: <input type="text" id="REGON-input" name="REGON-n"/> <br> <br></p>
+        <p>Dodatkowe informacje: <input type="text" id="dodatek-input" name="dodatek-n"/> <br> <br></p>
+    </div>
+</section>
+
+<section class="flex">
+    <div class="heading">
+        <p>Produkt/usługa</p>
+    </div>
+    <div class="heading">
+        <p>ilość</p>
+    </div>
+    <div class="heading">
+        <p>wartość netto</p>
+    </div>
+    <div class="heading">
+        <p>stawka vat</p>
+    </div>
+    <div class="heading">
+        <p>wartość vat</p>
+    </div>
+    <div class="heading">
+        <p>wartość brutto</p>
+    </div>
+</section>
+
+
+
+<section class="flex">
+    <div>
+        <p>Nazwa</p>
+    </div>
+    <div>
+        <p>ilość</p>
+    </div>
+    <div>
+        <p>wartość netto</p>
+    </div>
+    <div>
+        <p>stawka vat</p>
+    </div>
+    <div>
+        <p>wartość vat</p>
+    </div>
+    <div>
+        <p>wartość brutto</p>
+    </div>
+</section>
+
+<section>
+    <div class="sumy">
+        <h4>suma netto: <input type="text" id="value-text-input" name="netto-price"/> <br> <br></h4>
+        <h4>suma vat: <input type="text" id="vat-text-input" name="vat"/>% <br> <br></h4>
+        <h4>suma brutto: </h4>
+    </div>
+</section>
+
+<section class="flex">
+    <div>
+        <h3 class="border">informacje o płatności</h3>
+        <p>Waluta: <input type="text" id="waluta-input" name="waluta"/> <br> <br><SELECT>
+            <OPTION Value="PLN">Zlotowka</OPTION>
+            <OPTION Value="USD">Dolar</OPTION>
+            <OPTION Value="EUR">Euro</OPTION>
+        </SELECT></p>
+        <p>Forma płatności: </p>
+        <p>Termin płatności: </p>
+        <p>Dodatekowe informacje: </p>
+    </div>
+</section>
+
+<section>
+    <div class="block">
+        <h3 class="border">osoba upoważniona do wystawienia</h3>
+    </div>
+    <div class="block">
+        <h3 class="border">osoba upoważniona do odebrania</h3>
+    </div>
+</section>
+
+<section>
+    <div>
+        <input type="submit" id="send-button" value="Send"/>
+    </div>
+</section>
+</form>
+</body>
+</html>
